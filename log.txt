@@ -162,3 +162,632 @@ Solution count 0
 
 Model is infeasible
 Best objective -, best bound -, gap -
+
+Gurobi 9.5.1 (win64) logging started Thu Apr  7 00:33:59 2022
+
+Set parameter LogFile to value "log.txt"
+Minimize
+  <gurobi.LinExpr: Pi_abs[1] + Pi_abs[2] + Pi_abs[3]>
+Subject To
+R0: <gurobi.LinExpr: lambdas(1, 2)[0] + lambdas(1, 2)[1] + lambdas(1, 2)[2] +
+lambdas(1, 2)[3] + lambdas(1, 2)[4] + lambdas(1, 2)[5] + lambdas(1, 2)[6] + lambdas(1,
+2)[7] + lambdas(1, 2)[8] + lambdas(1, 2)[9] + lambdas(1, 2)[10] + lambdas(1, 2)[11] +
+ lambdas(1, 2)[12] + lambdas(1, 2)[13] + lambdas(1, 2)[14]> = 1
+R1: <gurobi.LinExpr: z(1, 2)[1] + z(1, 2)[2] + z(1, 2)[3] + z(1, 2)[4] + z(1, 2)[5] +
+z(1, 2)[6] + z(1, 2)[7] + z(1, 2)[8] + z(1, 2)[9] + z(1, 2)[10] + z(1, 2)[11] + z(1,
+ 2)[12] + z(1, 2)[13] + z(1, 2)[14]> = 1
+  R2: <gurobi.LinExpr: lambdas(1, 2)[0] + -1.0 z(1, 2)[1]> <= 0
+  R3: <gurobi.LinExpr: lambdas(1, 2)[14] + -1.0 z(1, 2)[14]> <= 0
+  R4: <gurobi.LinExpr: lambdas(1, 2)[1] + -1.0 z(1, 2)[1] + -1.0 z(1, 2)[2]> <= 0
+  R5: <gurobi.LinExpr: lambdas(1, 2)[2] + -1.0 z(1, 2)[2] + -1.0 z(1, 2)[3]> <= 0
+  R6: <gurobi.LinExpr: lambdas(1, 2)[3] + -1.0 z(1, 2)[3] + -1.0 z(1, 2)[4]> <= 0
+  R7: <gurobi.LinExpr: lambdas(1, 2)[4] + -1.0 z(1, 2)[4] + -1.0 z(1, 2)[5]> <= 0
+  R8: <gurobi.LinExpr: lambdas(1, 2)[5] + -1.0 z(1, 2)[5] + -1.0 z(1, 2)[6]> <= 0
+  R9: <gurobi.LinExpr: lambdas(1, 2)[6] + -1.0 z(1, 2)[6] + -1.0 z(1, 2)[7]> <= 0
+  R10: <gurobi.LinExpr: lambdas(1, 2)[7] + -1.0 z(1, 2)[7] + -1.0 z(1, 2)[8]> <= 0
+  R11: <gurobi.LinExpr: lambdas(1, 2)[8] + -1.0 z(1, 2)[8] + -1.0 z(1, 2)[9]> <= 0
+  R12: <gurobi.LinExpr: lambdas(1, 2)[9] + -1.0 z(1, 2)[9] + -1.0 z(1, 2)[10]> <= 0
+  R13: <gurobi.LinExpr: lambdas(1, 2)[10] + -1.0 z(1, 2)[10] + -1.0 z(1, 2)[11]> <= 0
+  R14: <gurobi.LinExpr: lambdas(1, 2)[11] + -1.0 z(1, 2)[11] + -1.0 z(1, 2)[12]> <= 0
+  R15: <gurobi.LinExpr: lambdas(1, 2)[12] + -1.0 z(1, 2)[12] + -1.0 z(1, 2)[13]> <= 0
+  R16: <gurobi.LinExpr: lambdas(1, 2)[13] + -1.0 z(1, 2)[13] + -1.0 z(1, 2)[14]> <= 0
+lag(1, 2) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 2)[0] +
+2.6927937030769655 lambdas(1, 2)[1] + 2.243994752564138 lambdas(1, 2)[2] +
+1.7951958020513104 lambdas(1, 2)[3] + 1.3463968515384828 lambdas(1, 2)[4] +
+0.8975979010256552 lambdas(1, 2)[5] + 0.4487989505128276 lambdas(1, 2)[6] +
+-0.4487989505128276 lambdas(1, 2)[8] + -0.8975979010256552 lambdas(1, 2)[9] +
+-1.3463968515384828 lambdas(1, 2)[10] + -1.7951958020513104 lambdas(1, 2)[11] +
+-2.243994752564138 lambdas(1, 2)[12] + -2.6927937030769655 lambdas(1, 2)[13] +
+ -3.141592653589793 lambdas(1, 2)[14] + lag(1, 2)> = 0
+Pf(1, 2) calculation: <gurobi.LinExpr: -0.6000000000000001 lambdas(1, 2)[0] +
+-0.670083920367764 lambdas(1, 2)[1] + -0.6668681815252668 lambdas(1, 2)[2] +
+-0.5909896999887136 lambdas(1, 2)[3] + -0.4574771396149251 lambdas(1, 2)[4] +
+-0.2927743004100268 lambdas(1, 2)[5] + -0.1295025996263126 lambdas(1, 2)[6] +
+0.07008392036776412 lambdas(1, 2)[8] + 0.06686818152526697 lambdas(1, 2)[9] +
+-0.00901030001128622 lambdas(1, 2)[10] + -0.14252286038507483 lambdas(1, 2)[11] +
+-0.30722569958997314 lambdas(1, 2)[12] + -0.47049740037368726 lambdas(1, 2)[13] +
+ -0.5999999999999999 lambdas(1, 2)[14] + Pf(1, 2)> = 0
+  thetas_i=((1, 2)): <gurobi.LinExpr: -1.0 thetai[1] + thetai[2] + lag(1, 2)> = 0
+R20: <gurobi.LinExpr: lambdas(1, 3)[0] + lambdas(1, 3)[1] + lambdas(1, 3)[2] +
+lambdas(1, 3)[3] + lambdas(1, 3)[4] + lambdas(1, 3)[5] + lambdas(1, 3)[6] + lambdas(1,
+3)[7] + lambdas(1, 3)[8] + lambdas(1, 3)[9] + lambdas(1, 3)[10] + lambdas(1, 3)[11] +
+ lambdas(1, 3)[12] + lambdas(1, 3)[13] + lambdas(1, 3)[14]> = 1
+R21: <gurobi.LinExpr: z(1, 3)[1] + z(1, 3)[2] + z(1, 3)[3] + z(1, 3)[4] + z(1, 3)[5] +
+z(1, 3)[6] + z(1, 3)[7] + z(1, 3)[8] + z(1, 3)[9] + z(1, 3)[10] + z(1, 3)[11] + z(1,
+ 3)[12] + z(1, 3)[13] + z(1, 3)[14]> = 1
+  R22: <gurobi.LinExpr: lambdas(1, 3)[0] + -1.0 z(1, 3)[1]> <= 0
+  R23: <gurobi.LinExpr: lambdas(1, 3)[14] + -1.0 z(1, 3)[14]> <= 0
+  R24: <gurobi.LinExpr: lambdas(1, 3)[1] + -1.0 z(1, 3)[1] + -1.0 z(1, 3)[2]> <= 0
+  R25: <gurobi.LinExpr: lambdas(1, 3)[2] + -1.0 z(1, 3)[2] + -1.0 z(1, 3)[3]> <= 0
+  R26: <gurobi.LinExpr: lambdas(1, 3)[3] + -1.0 z(1, 3)[3] + -1.0 z(1, 3)[4]> <= 0
+  R27: <gurobi.LinExpr: lambdas(1, 3)[4] + -1.0 z(1, 3)[4] + -1.0 z(1, 3)[5]> <= 0
+  R28: <gurobi.LinExpr: lambdas(1, 3)[5] + -1.0 z(1, 3)[5] + -1.0 z(1, 3)[6]> <= 0
+  R29: <gurobi.LinExpr: lambdas(1, 3)[6] + -1.0 z(1, 3)[6] + -1.0 z(1, 3)[7]> <= 0
+  R30: <gurobi.LinExpr: lambdas(1, 3)[7] + -1.0 z(1, 3)[7] + -1.0 z(1, 3)[8]> <= 0
+  R31: <gurobi.LinExpr: lambdas(1, 3)[8] + -1.0 z(1, 3)[8] + -1.0 z(1, 3)[9]> <= 0
+  R32: <gurobi.LinExpr: lambdas(1, 3)[9] + -1.0 z(1, 3)[9] + -1.0 z(1, 3)[10]> <= 0
+  R33: <gurobi.LinExpr: lambdas(1, 3)[10] + -1.0 z(1, 3)[10] + -1.0 z(1, 3)[11]> <= 0
+  R34: <gurobi.LinExpr: lambdas(1, 3)[11] + -1.0 z(1, 3)[11] + -1.0 z(1, 3)[12]> <= 0
+  R35: <gurobi.LinExpr: lambdas(1, 3)[12] + -1.0 z(1, 3)[12] + -1.0 z(1, 3)[13]> <= 0
+  R36: <gurobi.LinExpr: lambdas(1, 3)[13] + -1.0 z(1, 3)[13] + -1.0 z(1, 3)[14]> <= 0
+lag(1, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 3)[0] +
+2.6927937030769655 lambdas(1, 3)[1] + 2.243994752564138 lambdas(1, 3)[2] +
+1.7951958020513104 lambdas(1, 3)[3] + 1.3463968515384828 lambdas(1, 3)[4] +
+0.8975979010256552 lambdas(1, 3)[5] + 0.4487989505128276 lambdas(1, 3)[6] +
+-0.4487989505128276 lambdas(1, 3)[8] + -0.8975979010256552 lambdas(1, 3)[9] +
+-1.3463968515384828 lambdas(1, 3)[10] + -1.7951958020513104 lambdas(1, 3)[11] +
+-2.243994752564138 lambdas(1, 3)[12] + -2.6927937030769655 lambdas(1, 3)[13] +
+ -3.141592653589793 lambdas(1, 3)[14] + lag(1, 3)> = 0
+Pf(1, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(1, 3)[0] + -0.7738100385452362
+lambdas(1, 3)[1] + -0.7636793012675642 lambdas(1, 3)[2] + -0.6716143049301659 lambdas(1,
+3)[3] + -0.5158496511607458 lambdas(1, 3)[4] + -0.3272364399664507 lambdas(1, 3)[5] +
+-0.14313183101354282 lambdas(1, 3)[6] + 0.07381003854523621 lambdas(1, 3)[8] +
+0.06367930126756421 lambdas(1, 3)[9] + -0.028385695069834016 lambdas(1, 3)[10] +
+-0.18415034883925407 lambdas(1, 3)[11] + -0.3727635600335492 lambdas(1, 3)[12] +
+ -0.556868168986457 lambdas(1, 3)[13] + -0.7 lambdas(1, 3)[14] + Pf(1, 3)> = 0
+  thetas_i=((1, 3)): <gurobi.LinExpr: -1.0 thetai[1] + thetai[3] + lag(1, 3)> = 0
+R40: <gurobi.LinExpr: lambdas(2, 3)[0] + lambdas(2, 3)[1] + lambdas(2, 3)[2] +
+lambdas(2, 3)[3] + lambdas(2, 3)[4] + lambdas(2, 3)[5] + lambdas(2, 3)[6] + lambdas(2,
+3)[7] + lambdas(2, 3)[8] + lambdas(2, 3)[9] + lambdas(2, 3)[10] + lambdas(2, 3)[11] +
+ lambdas(2, 3)[12] + lambdas(2, 3)[13] + lambdas(2, 3)[14]> = 1
+R41: <gurobi.LinExpr: z(2, 3)[1] + z(2, 3)[2] + z(2, 3)[3] + z(2, 3)[4] + z(2, 3)[5] +
+z(2, 3)[6] + z(2, 3)[7] + z(2, 3)[8] + z(2, 3)[9] + z(2, 3)[10] + z(2, 3)[11] + z(2,
+ 3)[12] + z(2, 3)[13] + z(2, 3)[14]> = 1
+  R42: <gurobi.LinExpr: lambdas(2, 3)[0] + -1.0 z(2, 3)[1]> <= 0
+  R43: <gurobi.LinExpr: lambdas(2, 3)[14] + -1.0 z(2, 3)[14]> <= 0
+  R44: <gurobi.LinExpr: lambdas(2, 3)[1] + -1.0 z(2, 3)[1] + -1.0 z(2, 3)[2]> <= 0
+  R45: <gurobi.LinExpr: lambdas(2, 3)[2] + -1.0 z(2, 3)[2] + -1.0 z(2, 3)[3]> <= 0
+  R46: <gurobi.LinExpr: lambdas(2, 3)[3] + -1.0 z(2, 3)[3] + -1.0 z(2, 3)[4]> <= 0
+  R47: <gurobi.LinExpr: lambdas(2, 3)[4] + -1.0 z(2, 3)[4] + -1.0 z(2, 3)[5]> <= 0
+  R48: <gurobi.LinExpr: lambdas(2, 3)[5] + -1.0 z(2, 3)[5] + -1.0 z(2, 3)[6]> <= 0
+  R49: <gurobi.LinExpr: lambdas(2, 3)[6] + -1.0 z(2, 3)[6] + -1.0 z(2, 3)[7]> <= 0
+  R50: <gurobi.LinExpr: lambdas(2, 3)[7] + -1.0 z(2, 3)[7] + -1.0 z(2, 3)[8]> <= 0
+  R51: <gurobi.LinExpr: lambdas(2, 3)[8] + -1.0 z(2, 3)[8] + -1.0 z(2, 3)[9]> <= 0
+  R52: <gurobi.LinExpr: lambdas(2, 3)[9] + -1.0 z(2, 3)[9] + -1.0 z(2, 3)[10]> <= 0
+  R53: <gurobi.LinExpr: lambdas(2, 3)[10] + -1.0 z(2, 3)[10] + -1.0 z(2, 3)[11]> <= 0
+  R54: <gurobi.LinExpr: lambdas(2, 3)[11] + -1.0 z(2, 3)[11] + -1.0 z(2, 3)[12]> <= 0
+  R55: <gurobi.LinExpr: lambdas(2, 3)[12] + -1.0 z(2, 3)[12] + -1.0 z(2, 3)[13]> <= 0
+  R56: <gurobi.LinExpr: lambdas(2, 3)[13] + -1.0 z(2, 3)[13] + -1.0 z(2, 3)[14]> <= 0
+lag(2, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(2, 3)[0] +
+2.6927937030769655 lambdas(2, 3)[1] + 2.243994752564138 lambdas(2, 3)[2] +
+1.7951958020513104 lambdas(2, 3)[3] + 1.3463968515384828 lambdas(2, 3)[4] +
+0.8975979010256552 lambdas(2, 3)[5] + 0.4487989505128276 lambdas(2, 3)[6] +
+-0.4487989505128276 lambdas(2, 3)[8] + -0.8975979010256552 lambdas(2, 3)[9] +
+-1.3463968515384828 lambdas(2, 3)[10] + -1.7951958020513104 lambdas(2, 3)[11] +
+-2.243994752564138 lambdas(2, 3)[12] + -2.6927937030769655 lambdas(2, 3)[13] +
+ -3.141592653589793 lambdas(2, 3)[14] + lag(2, 3)> = 0
+Pf(2, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(2, 3)[0] + -0.7521158515893582
+lambdas(2, 3)[1] + -0.7245877271441628 lambdas(2, 3)[2] + -0.6228679093210747 lambdas(2,
+3)[3] + -0.46710325555165466 lambdas(2, 3)[4] + -0.2881448658430492 lambdas(2, 3)[5] +
+-0.12143764405766494 lambdas(2, 3)[6] + 0.05211585158935833 lambdas(2, 3)[8] +
+0.02458772714416274 lambdas(2, 3)[9] + -0.07713209067892518 lambdas(2, 3)[10] +
+-0.23289674444834524 lambdas(2, 3)[11] + -0.4118551341569507 lambdas(2, 3)[12] +
+ -0.578562355942335 lambdas(2, 3)[13] + -0.7 lambdas(2, 3)[14] + Pf(2, 3)> = 0
+  thetas_i=((2, 3)): <gurobi.LinExpr: -1.0 thetai[2] + thetai[3] + lag(2, 3)> = 0
+  R60: <gurobi.LinExpr: Pi[1] + -2.0 Pf(1, 2) + -1.0 Pf(1, 3)> = 0
+  R61: <gurobi.LinExpr: Pgi[1] + -1.0 Pi[1]> = 1
+  R62: <gurobi.LinExpr: Pi[2] + -2.0 Pf(1, 2) + -1.0 Pf(2, 3)> = 0
+  R63: <gurobi.LinExpr: Pgi[2] + -1.0 Pi[2]> = 3.5
+  R64: <gurobi.LinExpr: Pi[3] + -1.0 Pf(1, 3) + -1.0 Pf(2, 3)> = 0
+  R65: <gurobi.LinExpr: Pgi[3] + -1.0 Pi[3]> = 5
+Bounds
+  -1.5708 <= thetai[1] <= 1.5708
+  -1.5708 <= thetai[2] <= 1.5708
+  -1.5708 <= thetai[3] <= 1.5708
+  0 <= Pgi[1] <= 7
+  Pgi[2] = 0
+  0 <= Pgi[3] <= 4
+Binaries
+['z(1, 2)[1]', 'z(1, 2)[2]', 'z(1, 2)[3]', 'z(1, 2)[4]', 'z(1, 2)[5]', 'z(1, 2)[6]',
+'z(1, 2)[7]', 'z(1, 2)[8]', 'z(1, 2)[9]', 'z(1, 2)[10]', 'z(1, 2)[11]', 'z(1, 2)[12]',
+'z(1, 2)[13]', 'z(1, 2)[14]', 'z(1, 3)[1]', 'z(1, 3)[2]', 'z(1, 3)[3]', 'z(1, 3)[4]',
+'z(1, 3)[5]', 'z(1, 3)[6]', 'z(1, 3)[7]', 'z(1, 3)[8]', 'z(1, 3)[9]', 'z(1, 3)[10]',
+'z(1, 3)[11]', 'z(1, 3)[12]', 'z(1, 3)[13]', 'z(1, 3)[14]', 'z(2, 3)[1]', 'z(2, 3)[2]',
+'z(2, 3)[3]', 'z(2, 3)[4]', 'z(2, 3)[5]', 'z(2, 3)[6]', 'z(2, 3)[7]', 'z(2, 3)[8]',
+ 'z(2, 3)[9]', 'z(2, 3)[10]', 'z(2, 3)[11]', 'z(2, 3)[12]', 'z(2, 3)[13]', 'z(2, 3)[14]']
+
+Gurobi 9.5.1 (win64) logging started Thu Apr  7 00:36:59 2022
+
+Set parameter LogFile to value "log.txt"
+Minimize
+  <gurobi.LinExpr: Pi_abs[1] + Pi_abs[2] + Pi_abs[3]>
+Subject To
+R0: <gurobi.LinExpr: lambdas(1, 2)[0] + lambdas(1, 2)[1] + lambdas(1, 2)[2] +
+lambdas(1, 2)[3] + lambdas(1, 2)[4] + lambdas(1, 2)[5] + lambdas(1, 2)[6] + lambdas(1,
+2)[7] + lambdas(1, 2)[8] + lambdas(1, 2)[9] + lambdas(1, 2)[10] + lambdas(1, 2)[11] +
+ lambdas(1, 2)[12] + lambdas(1, 2)[13] + lambdas(1, 2)[14]> = 1
+R1: <gurobi.LinExpr: z(1, 2)[1] + z(1, 2)[2] + z(1, 2)[3] + z(1, 2)[4] + z(1, 2)[5] +
+z(1, 2)[6] + z(1, 2)[7] + z(1, 2)[8] + z(1, 2)[9] + z(1, 2)[10] + z(1, 2)[11] + z(1,
+ 2)[12] + z(1, 2)[13] + z(1, 2)[14]> = 1
+  R2: <gurobi.LinExpr: lambdas(1, 2)[0] + -1.0 z(1, 2)[1]> <= 0
+  R3: <gurobi.LinExpr: lambdas(1, 2)[14] + -1.0 z(1, 2)[14]> <= 0
+  R4: <gurobi.LinExpr: lambdas(1, 2)[1] + -1.0 z(1, 2)[1] + -1.0 z(1, 2)[2]> <= 0
+  R5: <gurobi.LinExpr: lambdas(1, 2)[2] + -1.0 z(1, 2)[2] + -1.0 z(1, 2)[3]> <= 0
+  R6: <gurobi.LinExpr: lambdas(1, 2)[3] + -1.0 z(1, 2)[3] + -1.0 z(1, 2)[4]> <= 0
+  R7: <gurobi.LinExpr: lambdas(1, 2)[4] + -1.0 z(1, 2)[4] + -1.0 z(1, 2)[5]> <= 0
+  R8: <gurobi.LinExpr: lambdas(1, 2)[5] + -1.0 z(1, 2)[5] + -1.0 z(1, 2)[6]> <= 0
+  R9: <gurobi.LinExpr: lambdas(1, 2)[6] + -1.0 z(1, 2)[6] + -1.0 z(1, 2)[7]> <= 0
+  R10: <gurobi.LinExpr: lambdas(1, 2)[7] + -1.0 z(1, 2)[7] + -1.0 z(1, 2)[8]> <= 0
+  R11: <gurobi.LinExpr: lambdas(1, 2)[8] + -1.0 z(1, 2)[8] + -1.0 z(1, 2)[9]> <= 0
+  R12: <gurobi.LinExpr: lambdas(1, 2)[9] + -1.0 z(1, 2)[9] + -1.0 z(1, 2)[10]> <= 0
+  R13: <gurobi.LinExpr: lambdas(1, 2)[10] + -1.0 z(1, 2)[10] + -1.0 z(1, 2)[11]> <= 0
+  R14: <gurobi.LinExpr: lambdas(1, 2)[11] + -1.0 z(1, 2)[11] + -1.0 z(1, 2)[12]> <= 0
+  R15: <gurobi.LinExpr: lambdas(1, 2)[12] + -1.0 z(1, 2)[12] + -1.0 z(1, 2)[13]> <= 0
+  R16: <gurobi.LinExpr: lambdas(1, 2)[13] + -1.0 z(1, 2)[13] + -1.0 z(1, 2)[14]> <= 0
+lag(1, 2) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 2)[0] +
+2.6927937030769655 lambdas(1, 2)[1] + 2.243994752564138 lambdas(1, 2)[2] +
+1.7951958020513104 lambdas(1, 2)[3] + 1.3463968515384828 lambdas(1, 2)[4] +
+0.8975979010256552 lambdas(1, 2)[5] + 0.4487989505128276 lambdas(1, 2)[6] +
+-0.4487989505128276 lambdas(1, 2)[8] + -0.8975979010256552 lambdas(1, 2)[9] +
+-1.3463968515384828 lambdas(1, 2)[10] + -1.7951958020513104 lambdas(1, 2)[11] +
+-2.243994752564138 lambdas(1, 2)[12] + -2.6927937030769655 lambdas(1, 2)[13] +
+ -3.141592653589793 lambdas(1, 2)[14] + lag(1, 2)> = 0
+Pf(1, 2) calculation: <gurobi.LinExpr: -0.6000000000000001 lambdas(1, 2)[0] +
+-0.670083920367764 lambdas(1, 2)[1] + -0.6668681815252668 lambdas(1, 2)[2] +
+-0.5909896999887136 lambdas(1, 2)[3] + -0.4574771396149251 lambdas(1, 2)[4] +
+-0.2927743004100268 lambdas(1, 2)[5] + -0.1295025996263126 lambdas(1, 2)[6] +
+0.07008392036776412 lambdas(1, 2)[8] + 0.06686818152526697 lambdas(1, 2)[9] +
+-0.00901030001128622 lambdas(1, 2)[10] + -0.14252286038507483 lambdas(1, 2)[11] +
+-0.30722569958997314 lambdas(1, 2)[12] + -0.47049740037368726 lambdas(1, 2)[13] +
+ -0.5999999999999999 lambdas(1, 2)[14] + Pf(1, 2)> = 0
+R19: <gurobi.LinExpr: lambdas(1, 3)[0] + lambdas(1, 3)[1] + lambdas(1, 3)[2] +
+lambdas(1, 3)[3] + lambdas(1, 3)[4] + lambdas(1, 3)[5] + lambdas(1, 3)[6] + lambdas(1,
+3)[7] + lambdas(1, 3)[8] + lambdas(1, 3)[9] + lambdas(1, 3)[10] + lambdas(1, 3)[11] +
+ lambdas(1, 3)[12] + lambdas(1, 3)[13] + lambdas(1, 3)[14]> = 1
+R20: <gurobi.LinExpr: z(1, 3)[1] + z(1, 3)[2] + z(1, 3)[3] + z(1, 3)[4] + z(1, 3)[5] +
+z(1, 3)[6] + z(1, 3)[7] + z(1, 3)[8] + z(1, 3)[9] + z(1, 3)[10] + z(1, 3)[11] + z(1,
+ 3)[12] + z(1, 3)[13] + z(1, 3)[14]> = 1
+  R21: <gurobi.LinExpr: lambdas(1, 3)[0] + -1.0 z(1, 3)[1]> <= 0
+  R22: <gurobi.LinExpr: lambdas(1, 3)[14] + -1.0 z(1, 3)[14]> <= 0
+  R23: <gurobi.LinExpr: lambdas(1, 3)[1] + -1.0 z(1, 3)[1] + -1.0 z(1, 3)[2]> <= 0
+  R24: <gurobi.LinExpr: lambdas(1, 3)[2] + -1.0 z(1, 3)[2] + -1.0 z(1, 3)[3]> <= 0
+  R25: <gurobi.LinExpr: lambdas(1, 3)[3] + -1.0 z(1, 3)[3] + -1.0 z(1, 3)[4]> <= 0
+  R26: <gurobi.LinExpr: lambdas(1, 3)[4] + -1.0 z(1, 3)[4] + -1.0 z(1, 3)[5]> <= 0
+  R27: <gurobi.LinExpr: lambdas(1, 3)[5] + -1.0 z(1, 3)[5] + -1.0 z(1, 3)[6]> <= 0
+  R28: <gurobi.LinExpr: lambdas(1, 3)[6] + -1.0 z(1, 3)[6] + -1.0 z(1, 3)[7]> <= 0
+  R29: <gurobi.LinExpr: lambdas(1, 3)[7] + -1.0 z(1, 3)[7] + -1.0 z(1, 3)[8]> <= 0
+  R30: <gurobi.LinExpr: lambdas(1, 3)[8] + -1.0 z(1, 3)[8] + -1.0 z(1, 3)[9]> <= 0
+  R31: <gurobi.LinExpr: lambdas(1, 3)[9] + -1.0 z(1, 3)[9] + -1.0 z(1, 3)[10]> <= 0
+  R32: <gurobi.LinExpr: lambdas(1, 3)[10] + -1.0 z(1, 3)[10] + -1.0 z(1, 3)[11]> <= 0
+  R33: <gurobi.LinExpr: lambdas(1, 3)[11] + -1.0 z(1, 3)[11] + -1.0 z(1, 3)[12]> <= 0
+  R34: <gurobi.LinExpr: lambdas(1, 3)[12] + -1.0 z(1, 3)[12] + -1.0 z(1, 3)[13]> <= 0
+  R35: <gurobi.LinExpr: lambdas(1, 3)[13] + -1.0 z(1, 3)[13] + -1.0 z(1, 3)[14]> <= 0
+lag(1, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 3)[0] +
+2.6927937030769655 lambdas(1, 3)[1] + 2.243994752564138 lambdas(1, 3)[2] +
+1.7951958020513104 lambdas(1, 3)[3] + 1.3463968515384828 lambdas(1, 3)[4] +
+0.8975979010256552 lambdas(1, 3)[5] + 0.4487989505128276 lambdas(1, 3)[6] +
+-0.4487989505128276 lambdas(1, 3)[8] + -0.8975979010256552 lambdas(1, 3)[9] +
+-1.3463968515384828 lambdas(1, 3)[10] + -1.7951958020513104 lambdas(1, 3)[11] +
+-2.243994752564138 lambdas(1, 3)[12] + -2.6927937030769655 lambdas(1, 3)[13] +
+ -3.141592653589793 lambdas(1, 3)[14] + lag(1, 3)> = 0
+Pf(1, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(1, 3)[0] + -0.7738100385452362
+lambdas(1, 3)[1] + -0.7636793012675642 lambdas(1, 3)[2] + -0.6716143049301659 lambdas(1,
+3)[3] + -0.5158496511607458 lambdas(1, 3)[4] + -0.3272364399664507 lambdas(1, 3)[5] +
+-0.14313183101354282 lambdas(1, 3)[6] + 0.07381003854523621 lambdas(1, 3)[8] +
+0.06367930126756421 lambdas(1, 3)[9] + -0.028385695069834016 lambdas(1, 3)[10] +
+-0.18415034883925407 lambdas(1, 3)[11] + -0.3727635600335492 lambdas(1, 3)[12] +
+ -0.556868168986457 lambdas(1, 3)[13] + -0.7 lambdas(1, 3)[14] + Pf(1, 3)> = 0
+R38: <gurobi.LinExpr: lambdas(2, 3)[0] + lambdas(2, 3)[1] + lambdas(2, 3)[2] +
+lambdas(2, 3)[3] + lambdas(2, 3)[4] + lambdas(2, 3)[5] + lambdas(2, 3)[6] + lambdas(2,
+3)[7] + lambdas(2, 3)[8] + lambdas(2, 3)[9] + lambdas(2, 3)[10] + lambdas(2, 3)[11] +
+ lambdas(2, 3)[12] + lambdas(2, 3)[13] + lambdas(2, 3)[14]> = 1
+R39: <gurobi.LinExpr: z(2, 3)[1] + z(2, 3)[2] + z(2, 3)[3] + z(2, 3)[4] + z(2, 3)[5] +
+z(2, 3)[6] + z(2, 3)[7] + z(2, 3)[8] + z(2, 3)[9] + z(2, 3)[10] + z(2, 3)[11] + z(2,
+ 3)[12] + z(2, 3)[13] + z(2, 3)[14]> = 1
+  R40: <gurobi.LinExpr: lambdas(2, 3)[0] + -1.0 z(2, 3)[1]> <= 0
+  R41: <gurobi.LinExpr: lambdas(2, 3)[14] + -1.0 z(2, 3)[14]> <= 0
+  R42: <gurobi.LinExpr: lambdas(2, 3)[1] + -1.0 z(2, 3)[1] + -1.0 z(2, 3)[2]> <= 0
+  R43: <gurobi.LinExpr: lambdas(2, 3)[2] + -1.0 z(2, 3)[2] + -1.0 z(2, 3)[3]> <= 0
+  R44: <gurobi.LinExpr: lambdas(2, 3)[3] + -1.0 z(2, 3)[3] + -1.0 z(2, 3)[4]> <= 0
+  R45: <gurobi.LinExpr: lambdas(2, 3)[4] + -1.0 z(2, 3)[4] + -1.0 z(2, 3)[5]> <= 0
+  R46: <gurobi.LinExpr: lambdas(2, 3)[5] + -1.0 z(2, 3)[5] + -1.0 z(2, 3)[6]> <= 0
+  R47: <gurobi.LinExpr: lambdas(2, 3)[6] + -1.0 z(2, 3)[6] + -1.0 z(2, 3)[7]> <= 0
+  R48: <gurobi.LinExpr: lambdas(2, 3)[7] + -1.0 z(2, 3)[7] + -1.0 z(2, 3)[8]> <= 0
+  R49: <gurobi.LinExpr: lambdas(2, 3)[8] + -1.0 z(2, 3)[8] + -1.0 z(2, 3)[9]> <= 0
+  R50: <gurobi.LinExpr: lambdas(2, 3)[9] + -1.0 z(2, 3)[9] + -1.0 z(2, 3)[10]> <= 0
+  R51: <gurobi.LinExpr: lambdas(2, 3)[10] + -1.0 z(2, 3)[10] + -1.0 z(2, 3)[11]> <= 0
+  R52: <gurobi.LinExpr: lambdas(2, 3)[11] + -1.0 z(2, 3)[11] + -1.0 z(2, 3)[12]> <= 0
+  R53: <gurobi.LinExpr: lambdas(2, 3)[12] + -1.0 z(2, 3)[12] + -1.0 z(2, 3)[13]> <= 0
+  R54: <gurobi.LinExpr: lambdas(2, 3)[13] + -1.0 z(2, 3)[13] + -1.0 z(2, 3)[14]> <= 0
+lag(2, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(2, 3)[0] +
+2.6927937030769655 lambdas(2, 3)[1] + 2.243994752564138 lambdas(2, 3)[2] +
+1.7951958020513104 lambdas(2, 3)[3] + 1.3463968515384828 lambdas(2, 3)[4] +
+0.8975979010256552 lambdas(2, 3)[5] + 0.4487989505128276 lambdas(2, 3)[6] +
+-0.4487989505128276 lambdas(2, 3)[8] + -0.8975979010256552 lambdas(2, 3)[9] +
+-1.3463968515384828 lambdas(2, 3)[10] + -1.7951958020513104 lambdas(2, 3)[11] +
+-2.243994752564138 lambdas(2, 3)[12] + -2.6927937030769655 lambdas(2, 3)[13] +
+ -3.141592653589793 lambdas(2, 3)[14] + lag(2, 3)> = 0
+Pf(2, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(2, 3)[0] + -0.7521158515893582
+lambdas(2, 3)[1] + -0.7245877271441628 lambdas(2, 3)[2] + -0.6228679093210747 lambdas(2,
+3)[3] + -0.46710325555165466 lambdas(2, 3)[4] + -0.2881448658430492 lambdas(2, 3)[5] +
+-0.12143764405766494 lambdas(2, 3)[6] + 0.05211585158935833 lambdas(2, 3)[8] +
+0.02458772714416274 lambdas(2, 3)[9] + -0.07713209067892518 lambdas(2, 3)[10] +
+-0.23289674444834524 lambdas(2, 3)[11] + -0.4118551341569507 lambdas(2, 3)[12] +
+ -0.578562355942335 lambdas(2, 3)[13] + -0.7 lambdas(2, 3)[14] + Pf(2, 3)> = 0
+  R57: <gurobi.LinExpr: Pi[1] + -2.0 Pf(1, 2) + -1.0 Pf(1, 3)> = 0
+  R58: <gurobi.LinExpr: Pgi[1] + -1.0 Pi[1]> = 1
+  R59: <gurobi.LinExpr: Pi[2] + -2.0 Pf(1, 2) + -1.0 Pf(2, 3)> = 0
+  R60: <gurobi.LinExpr: Pgi[2] + -1.0 Pi[2]> = 3.5
+  R61: <gurobi.LinExpr: Pi[3] + -1.0 Pf(1, 3) + -1.0 Pf(2, 3)> = 0
+  R62: <gurobi.LinExpr: Pgi[3] + -1.0 Pi[3]> = 5
+Bounds
+  0 <= Pgi[1] <= 7
+  Pgi[2] = 0
+  0 <= Pgi[3] <= 4
+Binaries
+['z(1, 2)[1]', 'z(1, 2)[2]', 'z(1, 2)[3]', 'z(1, 2)[4]', 'z(1, 2)[5]', 'z(1, 2)[6]',
+'z(1, 2)[7]', 'z(1, 2)[8]', 'z(1, 2)[9]', 'z(1, 2)[10]', 'z(1, 2)[11]', 'z(1, 2)[12]',
+'z(1, 2)[13]', 'z(1, 2)[14]', 'z(1, 3)[1]', 'z(1, 3)[2]', 'z(1, 3)[3]', 'z(1, 3)[4]',
+'z(1, 3)[5]', 'z(1, 3)[6]', 'z(1, 3)[7]', 'z(1, 3)[8]', 'z(1, 3)[9]', 'z(1, 3)[10]',
+'z(1, 3)[11]', 'z(1, 3)[12]', 'z(1, 3)[13]', 'z(1, 3)[14]', 'z(2, 3)[1]', 'z(2, 3)[2]',
+'z(2, 3)[3]', 'z(2, 3)[4]', 'z(2, 3)[5]', 'z(2, 3)[6]', 'z(2, 3)[7]', 'z(2, 3)[8]',
+ 'z(2, 3)[9]', 'z(2, 3)[10]', 'z(2, 3)[11]', 'z(2, 3)[12]', 'z(2, 3)[13]', 'z(2, 3)[14]']
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 63 rows, 102 columns and 321 nonzeros
+Model fingerprint: 0x6c59f9cf
+Model has 3 general constraints
+Variable types: 60 continuous, 42 integer (42 binary)
+Coefficient statistics:
+  Matrix range     [9e-03, 3e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 7e+00]
+  RHS range        [1e+00, 5e+00]
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 9.5.1 (win64) logging started Thu Apr  7 00:37:26 2022
+
+Set parameter LogFile to value "log.txt"
+Minimize
+  <gurobi.LinExpr: Pi_abs[1] + Pi_abs[2] + Pi_abs[3]>
+Subject To
+R0: <gurobi.LinExpr: lambdas(1, 2)[0] + lambdas(1, 2)[1] + lambdas(1, 2)[2] +
+lambdas(1, 2)[3] + lambdas(1, 2)[4] + lambdas(1, 2)[5] + lambdas(1, 2)[6] + lambdas(1,
+2)[7] + lambdas(1, 2)[8] + lambdas(1, 2)[9] + lambdas(1, 2)[10] + lambdas(1, 2)[11] +
+ lambdas(1, 2)[12] + lambdas(1, 2)[13] + lambdas(1, 2)[14]> = 1
+R1: <gurobi.LinExpr: z(1, 2)[1] + z(1, 2)[2] + z(1, 2)[3] + z(1, 2)[4] + z(1, 2)[5] +
+z(1, 2)[6] + z(1, 2)[7] + z(1, 2)[8] + z(1, 2)[9] + z(1, 2)[10] + z(1, 2)[11] + z(1,
+ 2)[12] + z(1, 2)[13] + z(1, 2)[14]> = 1
+  R2: <gurobi.LinExpr: lambdas(1, 2)[0] + -1.0 z(1, 2)[1]> <= 0
+  R3: <gurobi.LinExpr: lambdas(1, 2)[14] + -1.0 z(1, 2)[14]> <= 0
+  R4: <gurobi.LinExpr: lambdas(1, 2)[1] + -1.0 z(1, 2)[1] + -1.0 z(1, 2)[2]> <= 0
+  R5: <gurobi.LinExpr: lambdas(1, 2)[2] + -1.0 z(1, 2)[2] + -1.0 z(1, 2)[3]> <= 0
+  R6: <gurobi.LinExpr: lambdas(1, 2)[3] + -1.0 z(1, 2)[3] + -1.0 z(1, 2)[4]> <= 0
+  R7: <gurobi.LinExpr: lambdas(1, 2)[4] + -1.0 z(1, 2)[4] + -1.0 z(1, 2)[5]> <= 0
+  R8: <gurobi.LinExpr: lambdas(1, 2)[5] + -1.0 z(1, 2)[5] + -1.0 z(1, 2)[6]> <= 0
+  R9: <gurobi.LinExpr: lambdas(1, 2)[6] + -1.0 z(1, 2)[6] + -1.0 z(1, 2)[7]> <= 0
+  R10: <gurobi.LinExpr: lambdas(1, 2)[7] + -1.0 z(1, 2)[7] + -1.0 z(1, 2)[8]> <= 0
+  R11: <gurobi.LinExpr: lambdas(1, 2)[8] + -1.0 z(1, 2)[8] + -1.0 z(1, 2)[9]> <= 0
+  R12: <gurobi.LinExpr: lambdas(1, 2)[9] + -1.0 z(1, 2)[9] + -1.0 z(1, 2)[10]> <= 0
+  R13: <gurobi.LinExpr: lambdas(1, 2)[10] + -1.0 z(1, 2)[10] + -1.0 z(1, 2)[11]> <= 0
+  R14: <gurobi.LinExpr: lambdas(1, 2)[11] + -1.0 z(1, 2)[11] + -1.0 z(1, 2)[12]> <= 0
+  R15: <gurobi.LinExpr: lambdas(1, 2)[12] + -1.0 z(1, 2)[12] + -1.0 z(1, 2)[13]> <= 0
+  R16: <gurobi.LinExpr: lambdas(1, 2)[13] + -1.0 z(1, 2)[13] + -1.0 z(1, 2)[14]> <= 0
+lag(1, 2) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 2)[0] +
+2.6927937030769655 lambdas(1, 2)[1] + 2.243994752564138 lambdas(1, 2)[2] +
+1.7951958020513104 lambdas(1, 2)[3] + 1.3463968515384828 lambdas(1, 2)[4] +
+0.8975979010256552 lambdas(1, 2)[5] + 0.4487989505128276 lambdas(1, 2)[6] +
+-0.4487989505128276 lambdas(1, 2)[8] + -0.8975979010256552 lambdas(1, 2)[9] +
+-1.3463968515384828 lambdas(1, 2)[10] + -1.7951958020513104 lambdas(1, 2)[11] +
+-2.243994752564138 lambdas(1, 2)[12] + -2.6927937030769655 lambdas(1, 2)[13] +
+ -3.141592653589793 lambdas(1, 2)[14] + lag(1, 2)> = 0
+Pf(1, 2) calculation: <gurobi.LinExpr: -0.6000000000000001 lambdas(1, 2)[0] +
+-0.670083920367764 lambdas(1, 2)[1] + -0.6668681815252668 lambdas(1, 2)[2] +
+-0.5909896999887136 lambdas(1, 2)[3] + -0.4574771396149251 lambdas(1, 2)[4] +
+-0.2927743004100268 lambdas(1, 2)[5] + -0.1295025996263126 lambdas(1, 2)[6] +
+0.07008392036776412 lambdas(1, 2)[8] + 0.06686818152526697 lambdas(1, 2)[9] +
+-0.00901030001128622 lambdas(1, 2)[10] + -0.14252286038507483 lambdas(1, 2)[11] +
+-0.30722569958997314 lambdas(1, 2)[12] + -0.47049740037368726 lambdas(1, 2)[13] +
+ -0.5999999999999999 lambdas(1, 2)[14] + Pf(1, 2)> = 0
+  thetas_i=((1, 2)): <gurobi.LinExpr: -1.0 thetai[1] + thetai[2] + lag(1, 2)> = 0
+R20: <gurobi.LinExpr: lambdas(1, 3)[0] + lambdas(1, 3)[1] + lambdas(1, 3)[2] +
+lambdas(1, 3)[3] + lambdas(1, 3)[4] + lambdas(1, 3)[5] + lambdas(1, 3)[6] + lambdas(1,
+3)[7] + lambdas(1, 3)[8] + lambdas(1, 3)[9] + lambdas(1, 3)[10] + lambdas(1, 3)[11] +
+ lambdas(1, 3)[12] + lambdas(1, 3)[13] + lambdas(1, 3)[14]> = 1
+R21: <gurobi.LinExpr: z(1, 3)[1] + z(1, 3)[2] + z(1, 3)[3] + z(1, 3)[4] + z(1, 3)[5] +
+z(1, 3)[6] + z(1, 3)[7] + z(1, 3)[8] + z(1, 3)[9] + z(1, 3)[10] + z(1, 3)[11] + z(1,
+ 3)[12] + z(1, 3)[13] + z(1, 3)[14]> = 1
+  R22: <gurobi.LinExpr: lambdas(1, 3)[0] + -1.0 z(1, 3)[1]> <= 0
+  R23: <gurobi.LinExpr: lambdas(1, 3)[14] + -1.0 z(1, 3)[14]> <= 0
+  R24: <gurobi.LinExpr: lambdas(1, 3)[1] + -1.0 z(1, 3)[1] + -1.0 z(1, 3)[2]> <= 0
+  R25: <gurobi.LinExpr: lambdas(1, 3)[2] + -1.0 z(1, 3)[2] + -1.0 z(1, 3)[3]> <= 0
+  R26: <gurobi.LinExpr: lambdas(1, 3)[3] + -1.0 z(1, 3)[3] + -1.0 z(1, 3)[4]> <= 0
+  R27: <gurobi.LinExpr: lambdas(1, 3)[4] + -1.0 z(1, 3)[4] + -1.0 z(1, 3)[5]> <= 0
+  R28: <gurobi.LinExpr: lambdas(1, 3)[5] + -1.0 z(1, 3)[5] + -1.0 z(1, 3)[6]> <= 0
+  R29: <gurobi.LinExpr: lambdas(1, 3)[6] + -1.0 z(1, 3)[6] + -1.0 z(1, 3)[7]> <= 0
+  R30: <gurobi.LinExpr: lambdas(1, 3)[7] + -1.0 z(1, 3)[7] + -1.0 z(1, 3)[8]> <= 0
+  R31: <gurobi.LinExpr: lambdas(1, 3)[8] + -1.0 z(1, 3)[8] + -1.0 z(1, 3)[9]> <= 0
+  R32: <gurobi.LinExpr: lambdas(1, 3)[9] + -1.0 z(1, 3)[9] + -1.0 z(1, 3)[10]> <= 0
+  R33: <gurobi.LinExpr: lambdas(1, 3)[10] + -1.0 z(1, 3)[10] + -1.0 z(1, 3)[11]> <= 0
+  R34: <gurobi.LinExpr: lambdas(1, 3)[11] + -1.0 z(1, 3)[11] + -1.0 z(1, 3)[12]> <= 0
+  R35: <gurobi.LinExpr: lambdas(1, 3)[12] + -1.0 z(1, 3)[12] + -1.0 z(1, 3)[13]> <= 0
+  R36: <gurobi.LinExpr: lambdas(1, 3)[13] + -1.0 z(1, 3)[13] + -1.0 z(1, 3)[14]> <= 0
+lag(1, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 3)[0] +
+2.6927937030769655 lambdas(1, 3)[1] + 2.243994752564138 lambdas(1, 3)[2] +
+1.7951958020513104 lambdas(1, 3)[3] + 1.3463968515384828 lambdas(1, 3)[4] +
+0.8975979010256552 lambdas(1, 3)[5] + 0.4487989505128276 lambdas(1, 3)[6] +
+-0.4487989505128276 lambdas(1, 3)[8] + -0.8975979010256552 lambdas(1, 3)[9] +
+-1.3463968515384828 lambdas(1, 3)[10] + -1.7951958020513104 lambdas(1, 3)[11] +
+-2.243994752564138 lambdas(1, 3)[12] + -2.6927937030769655 lambdas(1, 3)[13] +
+ -3.141592653589793 lambdas(1, 3)[14] + lag(1, 3)> = 0
+Pf(1, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(1, 3)[0] + -0.7738100385452362
+lambdas(1, 3)[1] + -0.7636793012675642 lambdas(1, 3)[2] + -0.6716143049301659 lambdas(1,
+3)[3] + -0.5158496511607458 lambdas(1, 3)[4] + -0.3272364399664507 lambdas(1, 3)[5] +
+-0.14313183101354282 lambdas(1, 3)[6] + 0.07381003854523621 lambdas(1, 3)[8] +
+0.06367930126756421 lambdas(1, 3)[9] + -0.028385695069834016 lambdas(1, 3)[10] +
+-0.18415034883925407 lambdas(1, 3)[11] + -0.3727635600335492 lambdas(1, 3)[12] +
+ -0.556868168986457 lambdas(1, 3)[13] + -0.7 lambdas(1, 3)[14] + Pf(1, 3)> = 0
+  thetas_i=((1, 3)): <gurobi.LinExpr: -1.0 thetai[1] + thetai[3] + lag(1, 3)> = 0
+R40: <gurobi.LinExpr: lambdas(2, 3)[0] + lambdas(2, 3)[1] + lambdas(2, 3)[2] +
+lambdas(2, 3)[3] + lambdas(2, 3)[4] + lambdas(2, 3)[5] + lambdas(2, 3)[6] + lambdas(2,
+3)[7] + lambdas(2, 3)[8] + lambdas(2, 3)[9] + lambdas(2, 3)[10] + lambdas(2, 3)[11] +
+ lambdas(2, 3)[12] + lambdas(2, 3)[13] + lambdas(2, 3)[14]> = 1
+R41: <gurobi.LinExpr: z(2, 3)[1] + z(2, 3)[2] + z(2, 3)[3] + z(2, 3)[4] + z(2, 3)[5] +
+z(2, 3)[6] + z(2, 3)[7] + z(2, 3)[8] + z(2, 3)[9] + z(2, 3)[10] + z(2, 3)[11] + z(2,
+ 3)[12] + z(2, 3)[13] + z(2, 3)[14]> = 1
+  R42: <gurobi.LinExpr: lambdas(2, 3)[0] + -1.0 z(2, 3)[1]> <= 0
+  R43: <gurobi.LinExpr: lambdas(2, 3)[14] + -1.0 z(2, 3)[14]> <= 0
+  R44: <gurobi.LinExpr: lambdas(2, 3)[1] + -1.0 z(2, 3)[1] + -1.0 z(2, 3)[2]> <= 0
+  R45: <gurobi.LinExpr: lambdas(2, 3)[2] + -1.0 z(2, 3)[2] + -1.0 z(2, 3)[3]> <= 0
+  R46: <gurobi.LinExpr: lambdas(2, 3)[3] + -1.0 z(2, 3)[3] + -1.0 z(2, 3)[4]> <= 0
+  R47: <gurobi.LinExpr: lambdas(2, 3)[4] + -1.0 z(2, 3)[4] + -1.0 z(2, 3)[5]> <= 0
+  R48: <gurobi.LinExpr: lambdas(2, 3)[5] + -1.0 z(2, 3)[5] + -1.0 z(2, 3)[6]> <= 0
+  R49: <gurobi.LinExpr: lambdas(2, 3)[6] + -1.0 z(2, 3)[6] + -1.0 z(2, 3)[7]> <= 0
+  R50: <gurobi.LinExpr: lambdas(2, 3)[7] + -1.0 z(2, 3)[7] + -1.0 z(2, 3)[8]> <= 0
+  R51: <gurobi.LinExpr: lambdas(2, 3)[8] + -1.0 z(2, 3)[8] + -1.0 z(2, 3)[9]> <= 0
+  R52: <gurobi.LinExpr: lambdas(2, 3)[9] + -1.0 z(2, 3)[9] + -1.0 z(2, 3)[10]> <= 0
+  R53: <gurobi.LinExpr: lambdas(2, 3)[10] + -1.0 z(2, 3)[10] + -1.0 z(2, 3)[11]> <= 0
+  R54: <gurobi.LinExpr: lambdas(2, 3)[11] + -1.0 z(2, 3)[11] + -1.0 z(2, 3)[12]> <= 0
+  R55: <gurobi.LinExpr: lambdas(2, 3)[12] + -1.0 z(2, 3)[12] + -1.0 z(2, 3)[13]> <= 0
+  R56: <gurobi.LinExpr: lambdas(2, 3)[13] + -1.0 z(2, 3)[13] + -1.0 z(2, 3)[14]> <= 0
+lag(2, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(2, 3)[0] +
+2.6927937030769655 lambdas(2, 3)[1] + 2.243994752564138 lambdas(2, 3)[2] +
+1.7951958020513104 lambdas(2, 3)[3] + 1.3463968515384828 lambdas(2, 3)[4] +
+0.8975979010256552 lambdas(2, 3)[5] + 0.4487989505128276 lambdas(2, 3)[6] +
+-0.4487989505128276 lambdas(2, 3)[8] + -0.8975979010256552 lambdas(2, 3)[9] +
+-1.3463968515384828 lambdas(2, 3)[10] + -1.7951958020513104 lambdas(2, 3)[11] +
+-2.243994752564138 lambdas(2, 3)[12] + -2.6927937030769655 lambdas(2, 3)[13] +
+ -3.141592653589793 lambdas(2, 3)[14] + lag(2, 3)> = 0
+Pf(2, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(2, 3)[0] + -0.7521158515893582
+lambdas(2, 3)[1] + -0.7245877271441628 lambdas(2, 3)[2] + -0.6228679093210747 lambdas(2,
+3)[3] + -0.46710325555165466 lambdas(2, 3)[4] + -0.2881448658430492 lambdas(2, 3)[5] +
+-0.12143764405766494 lambdas(2, 3)[6] + 0.05211585158935833 lambdas(2, 3)[8] +
+0.02458772714416274 lambdas(2, 3)[9] + -0.07713209067892518 lambdas(2, 3)[10] +
+-0.23289674444834524 lambdas(2, 3)[11] + -0.4118551341569507 lambdas(2, 3)[12] +
+ -0.578562355942335 lambdas(2, 3)[13] + -0.7 lambdas(2, 3)[14] + Pf(2, 3)> = 0
+  thetas_i=((2, 3)): <gurobi.LinExpr: -1.0 thetai[2] + thetai[3] + lag(2, 3)> = 0
+  R60: <gurobi.LinExpr: Pi[1] + -2.0 Pf(1, 2) + -1.0 Pf(1, 3)> = 0
+  R61: <gurobi.LinExpr: Pgi[1] + -1.0 Pi[1]> = 1
+  R62: <gurobi.LinExpr: Pi[2] + -2.0 Pf(1, 2) + -1.0 Pf(2, 3)> = 0
+  R63: <gurobi.LinExpr: Pgi[2] + -1.0 Pi[2]> = 3.5
+  R64: <gurobi.LinExpr: Pi[3] + -1.0 Pf(1, 3) + -1.0 Pf(2, 3)> = 0
+  R65: <gurobi.LinExpr: Pgi[3] + -1.0 Pi[3]> = 5
+Bounds
+  -1.5708 <= thetai[1] <= 1.5708
+  -1.5708 <= thetai[2] <= 1.5708
+  -1.5708 <= thetai[3] <= 1.5708
+  0 <= Pgi[1] <= 7
+  Pgi[2] = 0
+  0 <= Pgi[3] <= 4
+Binaries
+['z(1, 2)[1]', 'z(1, 2)[2]', 'z(1, 2)[3]', 'z(1, 2)[4]', 'z(1, 2)[5]', 'z(1, 2)[6]',
+'z(1, 2)[7]', 'z(1, 2)[8]', 'z(1, 2)[9]', 'z(1, 2)[10]', 'z(1, 2)[11]', 'z(1, 2)[12]',
+'z(1, 2)[13]', 'z(1, 2)[14]', 'z(1, 3)[1]', 'z(1, 3)[2]', 'z(1, 3)[3]', 'z(1, 3)[4]',
+'z(1, 3)[5]', 'z(1, 3)[6]', 'z(1, 3)[7]', 'z(1, 3)[8]', 'z(1, 3)[9]', 'z(1, 3)[10]',
+'z(1, 3)[11]', 'z(1, 3)[12]', 'z(1, 3)[13]', 'z(1, 3)[14]', 'z(2, 3)[1]', 'z(2, 3)[2]',
+'z(2, 3)[3]', 'z(2, 3)[4]', 'z(2, 3)[5]', 'z(2, 3)[6]', 'z(2, 3)[7]', 'z(2, 3)[8]',
+ 'z(2, 3)[9]', 'z(2, 3)[10]', 'z(2, 3)[11]', 'z(2, 3)[12]', 'z(2, 3)[13]', 'z(2, 3)[14]']
+
+Gurobi 9.5.1 (win64) logging started Thu Apr  7 00:39:35 2022
+
+Set parameter LogFile to value "log.txt"
+Minimize
+  <gurobi.LinExpr: Pi_abs[1] + Pi_abs[2] + Pi_abs[3]>
+Subject To
+R0: <gurobi.LinExpr: lambdas(1, 2)[0] + lambdas(1, 2)[1] + lambdas(1, 2)[2] +
+lambdas(1, 2)[3] + lambdas(1, 2)[4] + lambdas(1, 2)[5] + lambdas(1, 2)[6] + lambdas(1,
+2)[7] + lambdas(1, 2)[8] + lambdas(1, 2)[9] + lambdas(1, 2)[10] + lambdas(1, 2)[11] +
+ lambdas(1, 2)[12] + lambdas(1, 2)[13] + lambdas(1, 2)[14]> = 1
+R1: <gurobi.LinExpr: z(1, 2)[1] + z(1, 2)[2] + z(1, 2)[3] + z(1, 2)[4] + z(1, 2)[5] +
+z(1, 2)[6] + z(1, 2)[7] + z(1, 2)[8] + z(1, 2)[9] + z(1, 2)[10] + z(1, 2)[11] + z(1,
+ 2)[12] + z(1, 2)[13] + z(1, 2)[14]> = 1
+  R2: <gurobi.LinExpr: lambdas(1, 2)[0] + -1.0 z(1, 2)[1]> <= 0
+  R3: <gurobi.LinExpr: lambdas(1, 2)[14] + -1.0 z(1, 2)[14]> <= 0
+  R4: <gurobi.LinExpr: lambdas(1, 2)[1] + -1.0 z(1, 2)[1] + -1.0 z(1, 2)[2]> <= 0
+  R5: <gurobi.LinExpr: lambdas(1, 2)[2] + -1.0 z(1, 2)[2] + -1.0 z(1, 2)[3]> <= 0
+  R6: <gurobi.LinExpr: lambdas(1, 2)[3] + -1.0 z(1, 2)[3] + -1.0 z(1, 2)[4]> <= 0
+  R7: <gurobi.LinExpr: lambdas(1, 2)[4] + -1.0 z(1, 2)[4] + -1.0 z(1, 2)[5]> <= 0
+  R8: <gurobi.LinExpr: lambdas(1, 2)[5] + -1.0 z(1, 2)[5] + -1.0 z(1, 2)[6]> <= 0
+  R9: <gurobi.LinExpr: lambdas(1, 2)[6] + -1.0 z(1, 2)[6] + -1.0 z(1, 2)[7]> <= 0
+  R10: <gurobi.LinExpr: lambdas(1, 2)[7] + -1.0 z(1, 2)[7] + -1.0 z(1, 2)[8]> <= 0
+  R11: <gurobi.LinExpr: lambdas(1, 2)[8] + -1.0 z(1, 2)[8] + -1.0 z(1, 2)[9]> <= 0
+  R12: <gurobi.LinExpr: lambdas(1, 2)[9] + -1.0 z(1, 2)[9] + -1.0 z(1, 2)[10]> <= 0
+  R13: <gurobi.LinExpr: lambdas(1, 2)[10] + -1.0 z(1, 2)[10] + -1.0 z(1, 2)[11]> <= 0
+  R14: <gurobi.LinExpr: lambdas(1, 2)[11] + -1.0 z(1, 2)[11] + -1.0 z(1, 2)[12]> <= 0
+  R15: <gurobi.LinExpr: lambdas(1, 2)[12] + -1.0 z(1, 2)[12] + -1.0 z(1, 2)[13]> <= 0
+  R16: <gurobi.LinExpr: lambdas(1, 2)[13] + -1.0 z(1, 2)[13] + -1.0 z(1, 2)[14]> <= 0
+lag(1, 2) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 2)[0] +
+2.6927937030769655 lambdas(1, 2)[1] + 2.243994752564138 lambdas(1, 2)[2] +
+1.7951958020513104 lambdas(1, 2)[3] + 1.3463968515384828 lambdas(1, 2)[4] +
+0.8975979010256552 lambdas(1, 2)[5] + 0.4487989505128276 lambdas(1, 2)[6] +
+-0.4487989505128276 lambdas(1, 2)[8] + -0.8975979010256552 lambdas(1, 2)[9] +
+-1.3463968515384828 lambdas(1, 2)[10] + -1.7951958020513104 lambdas(1, 2)[11] +
+-2.243994752564138 lambdas(1, 2)[12] + -2.6927937030769655 lambdas(1, 2)[13] +
+ -3.141592653589793 lambdas(1, 2)[14] + lag(1, 2)> = 0
+Pf(1, 2) calculation: <gurobi.LinExpr: -0.6000000000000001 lambdas(1, 2)[0] +
+-0.670083920367764 lambdas(1, 2)[1] + -0.6668681815252668 lambdas(1, 2)[2] +
+-0.5909896999887136 lambdas(1, 2)[3] + -0.4574771396149251 lambdas(1, 2)[4] +
+-0.2927743004100268 lambdas(1, 2)[5] + -0.1295025996263126 lambdas(1, 2)[6] +
+0.07008392036776412 lambdas(1, 2)[8] + 0.06686818152526697 lambdas(1, 2)[9] +
+-0.00901030001128622 lambdas(1, 2)[10] + -0.14252286038507483 lambdas(1, 2)[11] +
+-0.30722569958997314 lambdas(1, 2)[12] + -0.47049740037368726 lambdas(1, 2)[13] +
+ -0.5999999999999999 lambdas(1, 2)[14] + Pf(1, 2)> = 0
+  thetas_i=((1, 2)): <gurobi.LinExpr: -1.0 thetai[1] + thetai[2] + lag(1, 2)> = 0
+R20: <gurobi.LinExpr: lambdas(1, 3)[0] + lambdas(1, 3)[1] + lambdas(1, 3)[2] +
+lambdas(1, 3)[3] + lambdas(1, 3)[4] + lambdas(1, 3)[5] + lambdas(1, 3)[6] + lambdas(1,
+3)[7] + lambdas(1, 3)[8] + lambdas(1, 3)[9] + lambdas(1, 3)[10] + lambdas(1, 3)[11] +
+ lambdas(1, 3)[12] + lambdas(1, 3)[13] + lambdas(1, 3)[14]> = 1
+R21: <gurobi.LinExpr: z(1, 3)[1] + z(1, 3)[2] + z(1, 3)[3] + z(1, 3)[4] + z(1, 3)[5] +
+z(1, 3)[6] + z(1, 3)[7] + z(1, 3)[8] + z(1, 3)[9] + z(1, 3)[10] + z(1, 3)[11] + z(1,
+ 3)[12] + z(1, 3)[13] + z(1, 3)[14]> = 1
+  R22: <gurobi.LinExpr: lambdas(1, 3)[0] + -1.0 z(1, 3)[1]> <= 0
+  R23: <gurobi.LinExpr: lambdas(1, 3)[14] + -1.0 z(1, 3)[14]> <= 0
+  R24: <gurobi.LinExpr: lambdas(1, 3)[1] + -1.0 z(1, 3)[1] + -1.0 z(1, 3)[2]> <= 0
+  R25: <gurobi.LinExpr: lambdas(1, 3)[2] + -1.0 z(1, 3)[2] + -1.0 z(1, 3)[3]> <= 0
+  R26: <gurobi.LinExpr: lambdas(1, 3)[3] + -1.0 z(1, 3)[3] + -1.0 z(1, 3)[4]> <= 0
+  R27: <gurobi.LinExpr: lambdas(1, 3)[4] + -1.0 z(1, 3)[4] + -1.0 z(1, 3)[5]> <= 0
+  R28: <gurobi.LinExpr: lambdas(1, 3)[5] + -1.0 z(1, 3)[5] + -1.0 z(1, 3)[6]> <= 0
+  R29: <gurobi.LinExpr: lambdas(1, 3)[6] + -1.0 z(1, 3)[6] + -1.0 z(1, 3)[7]> <= 0
+  R30: <gurobi.LinExpr: lambdas(1, 3)[7] + -1.0 z(1, 3)[7] + -1.0 z(1, 3)[8]> <= 0
+  R31: <gurobi.LinExpr: lambdas(1, 3)[8] + -1.0 z(1, 3)[8] + -1.0 z(1, 3)[9]> <= 0
+  R32: <gurobi.LinExpr: lambdas(1, 3)[9] + -1.0 z(1, 3)[9] + -1.0 z(1, 3)[10]> <= 0
+  R33: <gurobi.LinExpr: lambdas(1, 3)[10] + -1.0 z(1, 3)[10] + -1.0 z(1, 3)[11]> <= 0
+  R34: <gurobi.LinExpr: lambdas(1, 3)[11] + -1.0 z(1, 3)[11] + -1.0 z(1, 3)[12]> <= 0
+  R35: <gurobi.LinExpr: lambdas(1, 3)[12] + -1.0 z(1, 3)[12] + -1.0 z(1, 3)[13]> <= 0
+  R36: <gurobi.LinExpr: lambdas(1, 3)[13] + -1.0 z(1, 3)[13] + -1.0 z(1, 3)[14]> <= 0
+lag(1, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(1, 3)[0] +
+2.6927937030769655 lambdas(1, 3)[1] + 2.243994752564138 lambdas(1, 3)[2] +
+1.7951958020513104 lambdas(1, 3)[3] + 1.3463968515384828 lambdas(1, 3)[4] +
+0.8975979010256552 lambdas(1, 3)[5] + 0.4487989505128276 lambdas(1, 3)[6] +
+-0.4487989505128276 lambdas(1, 3)[8] + -0.8975979010256552 lambdas(1, 3)[9] +
+-1.3463968515384828 lambdas(1, 3)[10] + -1.7951958020513104 lambdas(1, 3)[11] +
+-2.243994752564138 lambdas(1, 3)[12] + -2.6927937030769655 lambdas(1, 3)[13] +
+ -3.141592653589793 lambdas(1, 3)[14] + lag(1, 3)> = 0
+Pf(1, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(1, 3)[0] + -0.7738100385452362
+lambdas(1, 3)[1] + -0.7636793012675642 lambdas(1, 3)[2] + -0.6716143049301659 lambdas(1,
+3)[3] + -0.5158496511607458 lambdas(1, 3)[4] + -0.3272364399664507 lambdas(1, 3)[5] +
+-0.14313183101354282 lambdas(1, 3)[6] + 0.07381003854523621 lambdas(1, 3)[8] +
+0.06367930126756421 lambdas(1, 3)[9] + -0.028385695069834016 lambdas(1, 3)[10] +
+-0.18415034883925407 lambdas(1, 3)[11] + -0.3727635600335492 lambdas(1, 3)[12] +
+ -0.556868168986457 lambdas(1, 3)[13] + -0.7 lambdas(1, 3)[14] + Pf(1, 3)> = 0
+  thetas_i=((1, 3)): <gurobi.LinExpr: -1.0 thetai[1] + thetai[3] + lag(1, 3)> = 0
+R40: <gurobi.LinExpr: lambdas(2, 3)[0] + lambdas(2, 3)[1] + lambdas(2, 3)[2] +
+lambdas(2, 3)[3] + lambdas(2, 3)[4] + lambdas(2, 3)[5] + lambdas(2, 3)[6] + lambdas(2,
+3)[7] + lambdas(2, 3)[8] + lambdas(2, 3)[9] + lambdas(2, 3)[10] + lambdas(2, 3)[11] +
+ lambdas(2, 3)[12] + lambdas(2, 3)[13] + lambdas(2, 3)[14]> = 1
+R41: <gurobi.LinExpr: z(2, 3)[1] + z(2, 3)[2] + z(2, 3)[3] + z(2, 3)[4] + z(2, 3)[5] +
+z(2, 3)[6] + z(2, 3)[7] + z(2, 3)[8] + z(2, 3)[9] + z(2, 3)[10] + z(2, 3)[11] + z(2,
+ 3)[12] + z(2, 3)[13] + z(2, 3)[14]> = 1
+  R42: <gurobi.LinExpr: lambdas(2, 3)[0] + -1.0 z(2, 3)[1]> <= 0
+  R43: <gurobi.LinExpr: lambdas(2, 3)[14] + -1.0 z(2, 3)[14]> <= 0
+  R44: <gurobi.LinExpr: lambdas(2, 3)[1] + -1.0 z(2, 3)[1] + -1.0 z(2, 3)[2]> <= 0
+  R45: <gurobi.LinExpr: lambdas(2, 3)[2] + -1.0 z(2, 3)[2] + -1.0 z(2, 3)[3]> <= 0
+  R46: <gurobi.LinExpr: lambdas(2, 3)[3] + -1.0 z(2, 3)[3] + -1.0 z(2, 3)[4]> <= 0
+  R47: <gurobi.LinExpr: lambdas(2, 3)[4] + -1.0 z(2, 3)[4] + -1.0 z(2, 3)[5]> <= 0
+  R48: <gurobi.LinExpr: lambdas(2, 3)[5] + -1.0 z(2, 3)[5] + -1.0 z(2, 3)[6]> <= 0
+  R49: <gurobi.LinExpr: lambdas(2, 3)[6] + -1.0 z(2, 3)[6] + -1.0 z(2, 3)[7]> <= 0
+  R50: <gurobi.LinExpr: lambdas(2, 3)[7] + -1.0 z(2, 3)[7] + -1.0 z(2, 3)[8]> <= 0
+  R51: <gurobi.LinExpr: lambdas(2, 3)[8] + -1.0 z(2, 3)[8] + -1.0 z(2, 3)[9]> <= 0
+  R52: <gurobi.LinExpr: lambdas(2, 3)[9] + -1.0 z(2, 3)[9] + -1.0 z(2, 3)[10]> <= 0
+  R53: <gurobi.LinExpr: lambdas(2, 3)[10] + -1.0 z(2, 3)[10] + -1.0 z(2, 3)[11]> <= 0
+  R54: <gurobi.LinExpr: lambdas(2, 3)[11] + -1.0 z(2, 3)[11] + -1.0 z(2, 3)[12]> <= 0
+  R55: <gurobi.LinExpr: lambdas(2, 3)[12] + -1.0 z(2, 3)[12] + -1.0 z(2, 3)[13]> <= 0
+  R56: <gurobi.LinExpr: lambdas(2, 3)[13] + -1.0 z(2, 3)[13] + -1.0 z(2, 3)[14]> <= 0
+lag(2, 3) calculation: <gurobi.LinExpr: 3.141592653589793 lambdas(2, 3)[0] +
+2.6927937030769655 lambdas(2, 3)[1] + 2.243994752564138 lambdas(2, 3)[2] +
+1.7951958020513104 lambdas(2, 3)[3] + 1.3463968515384828 lambdas(2, 3)[4] +
+0.8975979010256552 lambdas(2, 3)[5] + 0.4487989505128276 lambdas(2, 3)[6] +
+-0.4487989505128276 lambdas(2, 3)[8] + -0.8975979010256552 lambdas(2, 3)[9] +
+-1.3463968515384828 lambdas(2, 3)[10] + -1.7951958020513104 lambdas(2, 3)[11] +
+-2.243994752564138 lambdas(2, 3)[12] + -2.6927937030769655 lambdas(2, 3)[13] +
+ -3.141592653589793 lambdas(2, 3)[14] + lag(2, 3)> = 0
+Pf(2, 3) calculation: <gurobi.LinExpr: -0.7 lambdas(2, 3)[0] + -0.7521158515893582
+lambdas(2, 3)[1] + -0.7245877271441628 lambdas(2, 3)[2] + -0.6228679093210747 lambdas(2,
+3)[3] + -0.46710325555165466 lambdas(2, 3)[4] + -0.2881448658430492 lambdas(2, 3)[5] +
+-0.12143764405766494 lambdas(2, 3)[6] + 0.05211585158935833 lambdas(2, 3)[8] +
+0.02458772714416274 lambdas(2, 3)[9] + -0.07713209067892518 lambdas(2, 3)[10] +
+-0.23289674444834524 lambdas(2, 3)[11] + -0.4118551341569507 lambdas(2, 3)[12] +
+ -0.578562355942335 lambdas(2, 3)[13] + -0.7 lambdas(2, 3)[14] + Pf(2, 3)> = 0
+  thetas_i=((2, 3)): <gurobi.LinExpr: -1.0 thetai[2] + thetai[3] + lag(2, 3)> = 0
+  R60: <gurobi.LinExpr: Pi[1] + -2.0 Pf(1, 2) + -1.0 Pf(1, 3)> = 0
+  R61: <gurobi.LinExpr: Pgi[1] + -1.0 Pi[1]> = 1
+  R62: <gurobi.LinExpr: Pi[2] + -2.0 Pf(1, 2) + -1.0 Pf(2, 3)> = 0
+  R63: <gurobi.LinExpr: Pgi[2] + -1.0 Pi[2]> = 3.5
+  R64: <gurobi.LinExpr: Pi[3] + -1.0 Pf(1, 3) + -1.0 Pf(2, 3)> = 0
+  R65: <gurobi.LinExpr: Pgi[3] + -1.0 Pi[3]> = 5
+Bounds
+  -1.5708 <= thetai[1] <= 1.5708
+  -1.5708 <= thetai[2] <= 1.5708
+  -1.5708 <= thetai[3] <= 1.5708
+  0 <= Pgi[1] <= 7
+  Pgi[2] = 0
+  0 <= Pgi[3] <= 4
+Binaries
+['z(1, 2)[1]', 'z(1, 2)[2]', 'z(1, 2)[3]', 'z(1, 2)[4]', 'z(1, 2)[5]', 'z(1, 2)[6]',
+'z(1, 2)[7]', 'z(1, 2)[8]', 'z(1, 2)[9]', 'z(1, 2)[10]', 'z(1, 2)[11]', 'z(1, 2)[12]',
+'z(1, 2)[13]', 'z(1, 2)[14]', 'z(1, 3)[1]', 'z(1, 3)[2]', 'z(1, 3)[3]', 'z(1, 3)[4]',
+'z(1, 3)[5]', 'z(1, 3)[6]', 'z(1, 3)[7]', 'z(1, 3)[8]', 'z(1, 3)[9]', 'z(1, 3)[10]',
+'z(1, 3)[11]', 'z(1, 3)[12]', 'z(1, 3)[13]', 'z(1, 3)[14]', 'z(2, 3)[1]', 'z(2, 3)[2]',
+'z(2, 3)[3]', 'z(2, 3)[4]', 'z(2, 3)[5]', 'z(2, 3)[6]', 'z(2, 3)[7]', 'z(2, 3)[8]',
+ 'z(2, 3)[9]', 'z(2, 3)[10]', 'z(2, 3)[11]', 'z(2, 3)[12]', 'z(2, 3)[13]', 'z(2, 3)[14]']
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 66 rows, 105 columns and 330 nonzeros
+Model fingerprint: 0x30c766dc
+Model has 3 general constraints
+Variable types: 63 continuous, 42 integer (42 binary)
+Coefficient statistics:
+  Matrix range     [9e-03, 3e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 7e+00]
+  RHS range        [1e+00, 5e+00]
+Presolve removed 0 rows and 3 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (win64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 66 rows, 105 columns and 330 nonzeros
+Model fingerprint: 0x30c766dc
+Model has 3 general constraints
+Variable types: 63 continuous, 42 integer (42 binary)
+Coefficient statistics:
+  Matrix range     [9e-03, 3e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 7e+00]
+  RHS range        [1e+00, 5e+00]
+Presolve removed 0 rows and 3 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
