@@ -8,7 +8,7 @@ Student: Bruno Kiyoshi Ynumaru; Prof. Eduardo Camponogara
 In this exercise, you will have the opportunity to approximate a nonlinear problem
 as a MILP by means of piecewise-linear models. The power system has 3 buses
 as depicted in Fig. 1. Buses 1 and 3 have generation units, whereas bus 2 is a
-power consumer. This Figures also gives the maximum power generation ($\bar{P_{gi}}$) and
+power consumer. This Figures also gives the maximum power generation (https://render.githubusercontent.com/render/math?math=\bar{P_{gi}}) and
 the power consumption ($\bar{P_{di}}$) of each bus i, under low and high demand. The
 properties of the transmission lines appear in Table 1, in pu using a 100 MVA basis,
 are indicated in the Figure. The parameters are the resistance $r_{i,j}$ , the reactance $x_{i,j}$
