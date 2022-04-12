@@ -31,15 +31,15 @@ and the number of lines installed between buses i and j.
 
 A simplified model is adopted for the transmission network, in which:  
 •Lines and transformers are represented by their series impedances in per unit:  
-\begin{equation}
-z_{i,j} = r_{i,j} + jx_{i,j} \space \space (1)
-\end{equation}
+
+$z_{i,j} = r_{i,j} + jx_{i,j} \space \space (1)$
+
 where ri;j is the resistance and xi;j is the reactance of line (i; j).  
 • Voltage magnitudes are fixed at 1:0 pu.  
 • Reactive power balance is supposed to be satisfied.  
 With these assumptions, active power flows are expressed as  
 \begin{equation}
-p.flow \space i \rightarrow j : P_{i,j} = g_{i,j}-(g_{i,j} cos\theta_{i,j} + b_{i,j} sin \theta_{i,j}) \space (2a)\\
+$p.flow \space i \rightarrow j : P_{i,j} = g_{i,j}-(g_{i,j} cos\theta_{i,j} + b_{i,j} sin \theta_{i,j}) \space (2a)\\ $
 p.flow \space j \rightarrow i : P_{j,i} = g_{i,j}-(g_{i,j} cos\theta_{i,j} - b_{i,j} sin \theta_{i,j}) \space (2b) 
 \end{equation}  
 where $gij$ and $b_{ij}$ are, respectively, the series conductance and series susceptance of
